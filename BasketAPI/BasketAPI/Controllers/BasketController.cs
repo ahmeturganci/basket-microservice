@@ -18,7 +18,7 @@ namespace BasketAPI.Controllers
         }
 
         [HttpGet]
-        public async Task<IActionResult> GetBasket()
+        public async Task<IActionResult> GetBaskets()
         {
             var response = await _service.GetBasketsAsync();
             if (response == null)

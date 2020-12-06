@@ -1,0 +1,22 @@
+﻿version: '3.7'
+
+services:
+
+  web:
+    image: 'basketapi'
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+     - 8080:80
+    depends_on:
+     - postgres
+    command: ["./wait-for-postgres.sh", "postgres", "dotnet", "BasketAPI.dll"]
+
+  postgres:
+    image: postgres
+    ports:
+     - 5433:5432
+    env_file:
+        - .env
+    

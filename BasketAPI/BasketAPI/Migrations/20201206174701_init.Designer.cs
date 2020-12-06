@@ -10,8 +10,8 @@ using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 namespace BasketAPI.Migrations
 {
     [DbContext(typeof(BasketDbContext))]
-    [Migration("20201205152938_A")]
-    partial class A
+    [Migration("20201206174701_init")]
+    partial class init
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {

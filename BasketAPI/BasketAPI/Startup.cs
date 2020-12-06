@@ -63,6 +63,11 @@ namespace BasketAPI
             {
                 endpoints.MapControllers();
             });
+
+            using (var scope = app.ApplicationServices.GetRequiredService<IServiceScopeFactory>().CreateScope())
+            {
+                scope.ServiceProvider.GetService<BasketDbContext>().Database.Migrate();
+            }
         }
     }
 }
