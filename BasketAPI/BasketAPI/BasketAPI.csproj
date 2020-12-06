@@ -30,5 +30,6 @@
     <Folder Include="Controllers\" />
     <Folder Include="Models\ViewModel\" />
     <Folder Include="Services\Implementations\" />
+    <Folder Include="Providers\" />
   </ItemGroup>
 </Project>

@@ -11,6 +11,7 @@ using BasketAPI.Services.Implementations;
 using BasketAPI.Services;
 using BasketAPI.Repository;
 using BasketAPI.Repository.Implementations;
+using BasketAPI.Providers;
 
 namespace BasketAPI
 {
@@ -31,6 +32,7 @@ namespace BasketAPI
 
             services.AddScoped<IBasketService, BasketService>();
             services.AddScoped<IBasketRepository, BasketRepository>();
+            services.AddScoped<IDummyStockProvider, DummyStockProvider>();
 
 
             services.AddControllers();
