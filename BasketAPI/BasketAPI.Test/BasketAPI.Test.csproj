@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{4D67C88B-1DF7-40DD-847A-21CE412D69C4}</ProjectGuid>
+    <ProjectGuid>{87E0201C-A38F-4522-9273-F49301587F69}</ProjectGuid>
     <OutputType>Library</OutputType>
-    <RootNamespace>BasketAPI.Controller.Test</RootNamespace>
-    <AssemblyName>BasketAPI.Controller.Test</AssemblyName>
+    <RootNamespace>BasketAPI.Test</RootNamespace>
+    <AssemblyName>BasketAPI.Test</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
@@ -32,13 +32,21 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Test.cs" />
+    <Compile Include="Controllers.Tests\Controllers\BasketControllerTest.cs" />
+    <Compile Include="Services.Test\Services\BasketServiceTest.cs" />
+    <Compile Include="Services.Test\TestDatas\BasketServiceTestData.cs" />
+  </ItemGroup>
+  <ItemGroup>
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="TestData\" />
-  </ItemGroup>
-  <ItemGroup>
-    <Compile Include="TestData\BasketItem_Add_ReturnTrue.cs" />
+    <Folder Include="Controllers.Tests\" />
+    <Folder Include="Controllers.Tests\Controllers\" />
+    <Folder Include="Controllers.Tests\TestDatas\" />
+    <Folder Include="Services.Test\" />
+    <Folder Include="Services.Test\TestDatas\" />
+    <Folder Include="Services.Test\Services\" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
 </Project>

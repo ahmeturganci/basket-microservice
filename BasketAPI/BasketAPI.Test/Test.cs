@@ -1,6 +1,6 @@
 ﻿using NUnit.Framework;
 using System;
-namespace BasketAPI.Controller.Test
+namespace BasketAPI.Test
 {
     [TestFixture()]
     public class Test

@@ -5,12 +5,6 @@ VisualStudioVersion = 16.0.808.3
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BasketAPI", "BasketAPI\BasketAPI.csproj", "{E7176E09-EA9B-4297-B6EE-45414CE3E8B3}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{A76196FC-C917-4E64-B6E1-55FDB982F03E}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BasketAPI.Controller.Test", "BasketAPI.Controller.Test\BasketAPI.Controller.Test.csproj", "{4D67C88B-1DF7-40DD-847A-21CE412D69C4}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BasketAPI.Service.Test", "BasketAPI.Controller.Test\BasketAPI.Service.Test\BasketAPI.Service.Test.csproj", "{7F5F6F0B-B173-4E47-B738-5CDF26B9749B}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,14 +15,6 @@ Global
 		{E7176E09-EA9B-4297-B6EE-45414CE3E8B3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E7176E09-EA9B-4297-B6EE-45414CE3E8B3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E7176E09-EA9B-4297-B6EE-45414CE3E8B3}.Release|Any CPU.Build.0 = Release|Any CPU
-		{4D67C88B-1DF7-40DD-847A-21CE412D69C4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{4D67C88B-1DF7-40DD-847A-21CE412D69C4}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{4D67C88B-1DF7-40DD-847A-21CE412D69C4}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{4D67C88B-1DF7-40DD-847A-21CE412D69C4}.Release|Any CPU.Build.0 = Release|Any CPU
-		{7F5F6F0B-B173-4E47-B738-5CDF26B9749B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{7F5F6F0B-B173-4E47-B738-5CDF26B9749B}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{7F5F6F0B-B173-4E47-B738-5CDF26B9749B}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{7F5F6F0B-B173-4E47-B738-5CDF26B9749B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -37,7 +23,5 @@ Global
 		SolutionGuid = {F90DDF4F-B73D-4DF3-8992-716FA179EB9D}
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
-		{4D67C88B-1DF7-40DD-847A-21CE412D69C4} = {A76196FC-C917-4E64-B6E1-55FDB982F03E}
-		{7F5F6F0B-B173-4E47-B738-5CDF26B9749B} = {A76196FC-C917-4E64-B6E1-55FDB982F03E}
 	EndGlobalSection
 EndGlobal
