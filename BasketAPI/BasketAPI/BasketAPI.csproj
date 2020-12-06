@@ -31,5 +31,6 @@
     <Folder Include="Models\ViewModel\" />
     <Folder Include="Services\Implementations\" />
     <Folder Include="Providers\" />
+    <Folder Include="Exceptions\" />
   </ItemGroup>
 </Project>

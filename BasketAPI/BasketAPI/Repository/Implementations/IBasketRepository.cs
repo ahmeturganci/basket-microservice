@@ -12,5 +12,5 @@ namespace BasketAPI.Repository.Implementations
         Task<IEnumerable<BasketItem>> GetBasketsAsync();
         Task<bool> AddBasketsAsync(BasketItem entity);
         Task<BasketItem> GetBasketsByUserNameAsync(string userName);
-    }
+          }
     }
