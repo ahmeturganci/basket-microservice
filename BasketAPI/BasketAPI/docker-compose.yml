@@ -1,6 +1,21 @@
-﻿version: '3.7'
+﻿version: '3.8'
 
 services:
+
+  postgres:
+      restart: always
+      image: postgres
+      ports:
+        - 5432:5432
+      env_file:
+          - .env
+      volumes:
+        - database-data:/var/lib/postgresql/data/
+      healthcheck:
+        test: ["CMD-SHELL", "pg_isready -U postgres"]
+        interval: 5s
+        timeout: 5s
+        retries: 5
 
   web:
     image: 'basketapi'
@@ -8,15 +23,11 @@ services:
       context: .
       dockerfile: Dockerfile
     ports:
-     - 8080:80
+      - 8080:80
     depends_on:
-     - postgres
-    command: ["./wait-for-postgres.sh", "postgres", "dotnet", "BasketAPI.dll"]
-
-  postgres:
-    image: postgres
-    ports:
-     - 5433:5432
-    env_file:
-        - .env
+      postgres:
+        condition: service_healthy
+    command: ["dotnet", "BasketAPI.dll"]
     
+volumes:
+  database-data:
