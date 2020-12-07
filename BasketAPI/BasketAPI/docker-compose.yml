@@ -19,6 +19,8 @@ services:
 
   web:
     image: 'basketapi'
+    environment:
+        - ASPNETCORE_ENVIRONMENT=Development
     build:
       context: .
       dockerfile: Dockerfile
